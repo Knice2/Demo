@@ -1,3 +1,33 @@
-Steadfast love of the Lord never ceaseth
-His mercies never come to an end
-They are new every morning
+Pipeline {
+    agent 'any'
+    
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'hello world'
+            }
+        }
+        
+        stage('Clone') {
+            steps {
+                echo 'hello world'
+                sleep 10
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo 'hello world'
+                sleep 10
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'hello world'
+                sleep 10
+            }
+        }
+        
+    }
+}
